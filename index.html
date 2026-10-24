@@ -133,6 +133,17 @@ section+section{border-top:1px solid var(--line)}
 .how h3{font-size:22px;margin-bottom:6px}
 .how p{color:var(--ink-2);margin:0;font-size:16px}
 
+/* recommendations */
+.quotes{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.quote{margin:0;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:28px 26px 22px;display:flex;flex-direction:column;justify-content:space-between;gap:22px}
+.quote blockquote{margin:0;font-family:Newsreader,Georgia,"Times New Roman",serif;font-size:21px;line-height:1.38;color:var(--ink)}
+.quote blockquote::before{content:"\201C";display:block;font-size:56px;line-height:.62;color:var(--accent);margin-bottom:8px}
+.quote figcaption{font-size:14px;line-height:1.45;color:var(--ink-2);border-top:1px solid var(--line);padding-top:14px}
+.quote figcaption b{display:block;color:var(--ink);font-size:15px;font-weight:600;margin-bottom:2px}
+.quote figcaption span{display:block;color:var(--ink-3);margin-top:4px}
+.recs-more{margin:28px 0 0}
+.btn .arrow{font-weight:500}
+
 /* contact */
 .contact{text-align:center;padding:84px 0}
 .contact h2{margin-bottom:14px}
@@ -144,6 +155,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
 @media (max-width:860px){
   .feature{grid-template-columns:1fr;padding:26px}
   .role{grid-template-columns:1fr;gap:10px;padding:24px 0}
+  .quotes{grid-template-columns:1fr}
 }
 @media (max-width:720px){
   body{font-size:16px}
@@ -170,6 +182,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
       <a href="#work">Work</a>
       <a href="#built">What I built</a>
       <a href="#ai">AI</a>
+      <a href="#recs">Recommendations</a>
       <a href="#contact">Contact</a>
       <a class="btn" href="Kevin-Given-Resume.pdf" target="_blank" rel="noopener">Resume</a>
     </div>
@@ -386,6 +399,31 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
       <div><h3>Flag risk early</h3><p>Nobody should be surprised at renewal. If usage is flat or a rollout has stalled, I raise it months out, with a plan.</p></div>
       <div><h3>Outcomes before expansion</h3><p>An honest success plan comes first. I bring up growth only when it ties to a result the customer already cares about.</p></div>
     </div>
+  </div>
+</section>
+
+<section id="recs">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Recommendations</span>
+      <h2>What my managers say</h2>
+      <p>Three of my managers at NGINX (F5) wrote letters of recommendation for me. A line from each:</p>
+    </div>
+    <div class="quotes">
+      <figure class="quote">
+        <blockquote>Kevin always over-achieved his annual quota by being extremely organized and prioritizing his day-to-day activities to ensure customers renewed on or before their contract expired as well as expanding growth within his accounts.</blockquote>
+        <figcaption><b>Bob Berini</b>Sr. Director Customer Success, AMER, F5<span>My manager and director, 2019 to 2022</span></figcaption>
+      </figure>
+      <figure class="quote">
+        <blockquote>His efforts and successes caught the attention of his peers, and he became a leader that they all looked to for advice and counsel.</blockquote>
+        <figcaption><b>Tom Yurch</b>Sr. Director Customer Success, F5 NGINX<span>My manager for a little over two years</span></figcaption>
+      </figure>
+      <figure class="quote">
+        <blockquote>He is caring, passionate, intelligent, driven, and always thinking about what&rsquo;s best for the company, not just himself.</blockquote>
+        <figcaption><b>Casey Woods</b>Director Global Demand Response, F5<span>My manager for nearly three years</span></figcaption>
+      </figure>
+    </div>
+    <p class="recs-more"><a class="btn" href="recommendations.html">See all recommendations <span class="arrow" aria-hidden="true">&rarr;</span></a></p>
   </div>
 </section>
 
